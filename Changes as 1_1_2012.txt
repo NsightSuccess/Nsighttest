@@ -1,0 +1,6 @@
+﻿03/Jan/2012  Changed insight_test.asp to have email test notification point to data at http://nsightsuccess.com for scoring
+
+22/Jan/2012  Changed insight_acct.asp to have order notification point to data at http://nsightsuccess.com for orders
+             Customer notification of order ok'd also points them to nsightsuccess.com to login to use new passwords.
+
+22/Jan/2012  "Score This Test" was removed from the results page...All scoring will now be done on nsightsuccess or the local intranet.

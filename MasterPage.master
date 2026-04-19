@@ -1,0 +1,97 @@
+﻿<%@ Master Language="VB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Directional Insight Intl., Inc</title>
+    <meta name="description" content="This NSight Assessment Center provides clients with online assessment tools developed to address selection, management and teambuilding needs."/>
+	<meta name="keywords" content="directionalinsight.com,on-line assessment,Nsight,Insight,Directional Insight International,Aptitude,Aptitude Testing,Personality,Personality Testing,Management,Coaching,Teambuilding needs."/>
+	<asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+	<style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+        .auto-style2 {
+            height: 96px;
+        }
+    </style>
+
+<script type="text/javascript">
+    var appInsights = window.appInsights || function (config) {
+        function i(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = "AuthenticatedUserContext", h = "start", c = "stop", l = "Track", a = l + "Event", v = l + "Page", y = u.createElement(o), r, f; y.src = config.url ||
+    "https://az416426.vo.msecnd.net/scripts/a/ai.0.js"; u.getElementsByTagName(o)[0].parentNode.appendChild(y); try { t.cookie = u.cookie } catch (p) { } for (t.queue = [], t.version = "1.0", r = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; r.length;) i("track" + r.pop()); return i("set" + s), i("clear" + s), i(h + a)
+    , i(c + a), i(h + v), i(c + v), i("flush"), config.disableExceptionTracking || (r = "onerror", i("_" + r), f = e[r], e[r] = function (config, i, u, e, o) { var s = f && f(config, i, u, e, o); return s !== !0 && t["_" + r](config, i, u, e, o), s }), t
+    }({
+        instrumentationKey: "12f5d647-adb7-4b75-b37e-a54ed6081951"
+    });
+    window.appInsights = appInsights;
+    appInsights.trackPageView();
+
+</script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+				<div class="auto-style1">
+				<asp:Image ID="Image9" runat="server" ImageUrl="gfx/400dpiLogo.jpg" Width="505px" 
+                    Height="175px" />
+				<br />
+				<asp:HyperLink ID="HyperLink1" runat="server" 
+                    ImageUrl="gfx/btn_home_a.png" NavigateUrl="~/">HyperLink</asp:HyperLink>
+				<asp:HyperLink ID="HyperLink3" runat="server" 
+                    ImageUrl="gfx/btn_product_a.gif" 
+                    NavigateUrl="~/product_information.aspx">HyperLink</asp:HyperLink>
+				<asp:HyperLink ID="HyperLink2" runat="server" 
+                    ImageUrl="gfx/btn_contactus_a.gif" NavigateUrl="~/contact_us.aspx">HyperLink</asp:HyperLink>
+				<asp:HyperLink ID="HyperLink5" runat="server" 
+                    ImageUrl="gfx/btn_account_a.gif" NavigateUrl="~/insight_login.asp">HyperLink</asp:HyperLink>
+				<asp:HyperLink ID="HyperLink6" runat="server" 
+                    ImageUrl="gfx/btn_taketest_a.gif" NavigateUrl="~/insight_login.asp?action=taketest">HyperLink</asp:HyperLink>
+    
+				<asp:HyperLink ID="HyperLink7" runat="server" 
+                    ImageUrl="gfx/btn_taketest_360.gif" NavigateUrl="~/360test.aspx" Target="_blank">HyperLink</asp:HyperLink>
+    
+                    <br />
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">        
+        </asp:ContentPlaceHolder>
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; height: 111px;" 
+                                            bordercolor="#111111" width="100%">
+  <tr>
+    <td width="100%" class="auto-style2">
+        <div align="center">
+            <p style="word-spacing: 0; margin-top: 0">
+                <b><font size="2">
+                Site Maintained by<br />
+            Gerald
+        T. Alford<br />
+            843-221-4500<br />
+            Frank
+        and Penny Reynolds<br />
+            817-707-6266</font></b></p></div>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" height="62"> 
+      <div align="center">Copyright 
+        NSight 2001. All rights reserved.</div>
+      <div align="center">Do not duplicate in any form.</div>
+    </td>
+  </tr>
+</table>
+    
+                </div>
+    
+    </form>
+</body>
+</html>
