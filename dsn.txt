@@ -1,0 +1,31 @@
+<%
+If IsObject(Session("nsight_conn")) Then
+    Set conn = Session("nsight_conn")
+Else
+    Set conn = Server.CreateObject("ADODB.Connection")
+
+    'conn.open "DRIVER={SQL SERVER};SERVER=sql1101.mssqlservers.com;UID=insi40;PWD=Nsight1234;DATABASE=insi40"     'verio virginia
+
+    conn.open "Driver={SQL Server};Server=qpkc8aqbyf.database.windows.net,1433;Database=insi40;Uid=insi40@qpkc8aqbyf;Pwd=Nsight1234;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+
+    'conn.open "Driver={SQL Server};Server=qpkc8aqbyf.database.windows.net,1433;Database=insi40;Uid=insi40@qpkc8aqbyf;Pwd=Nsight1234"
+
+    'conn.open "Driver={SQL Server};Server=gerald.database.windows.net,1433;Database=gerald;Uid=gerald@gerald;Pwd=Themas1950;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+
+    'conn.open "Driver={SQL Server};Server=40.86.89.229;Database=insi40;Uid=galford;Pwd=Themas1950;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+
+    'conn.open "DRIVER={SQL SERVER};SERVER=dell-8700\insi40;UID=insi40;PWD=Nsight1234;DATABASE=insi40"			'networksolutions
+
+    'conn.open "DRIVER={SQL SERVER};SERVER=209.17.116.14,1433;UID=insi40;PWD=Nsight1234;DATABASE=insi40"			'networksolutions
+
+    'conn.open "DRIVER={SQL SERVER};SERVER=209.17.116.14,1433;UID=nsight1;PWD=Nsight1234;DATABASE=nsight"             'networksolutions
+
+    'conn.open "DRIVER={SQL SERVER};SERVER=209.17.116.14,1433;UID=nsight2;PWD=Nsight1234;DATABASE=nsight2"             'networksolutions
+
+    'conn.open "DRIVER={SQL SERVER};SERVER=209.17.116.14,1433;UID=nsight3;PWD=Nsight1234;DATABASE=nsight3"             'networksolutions
+
+    'conn.open "DRIVER={SQL SERVER};SERVER=209.17.116.14,1433;UID=nsight4;PWD=Nsight1234;DATABASE=nsight4"             'networksolutions
+
+    Set Session("nsight_conn") = conn
+End If
+%>
